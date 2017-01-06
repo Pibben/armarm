@@ -4,13 +4,17 @@ import math
 import numpy as np
 
 def main():
-    f = kinematics.ArticulatedArm()
-    forward = f.calculate_forward(math.radians(0), math.radians(1), math.radians(1))
     np.set_printoptions(precision=4)
     np.set_printoptions(suppress=True)
-    print(forward)
-    inverse = f.calculate_inverse(*(forward[:3]))
-    print(np.array(inverse))
+
+    f = kinematics.ArticulatedArm()
+
+    inverse = f.calculate_inverse(10, 0 , 0)
+    print(np.degrees(np.array(inverse)))
+
+    forward = f.calculate_forward(*inverse)
+    print(forward[:3])
+
 
 if __name__ == "__main__":
     main()

@@ -69,4 +69,4 @@ class ArticulatedArm:
         theta2 = math.pi - angle_from_sides(self.L2.a, self.L3.a, S)
         theta_h = math.atan2(Zprim, R)
 
-        return tuple([math.degrees(theta0), math.degrees(theta1 + theta_h), math.degrees(theta2)])
+        return tuple([theta0, theta1 + theta_h, theta2])
