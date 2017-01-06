@@ -52,9 +52,11 @@ class ArticulatedArm:
 
         return np.squeeze(np.asarray(m @ np.array([0, 0, 0, 1])))
 
-    def calculate_inverse(self, X, Y, Z):
+    def calculate_inverse(self, coords):
         def angle_from_sides(a, b, c):
             return math.acos((a ** 2 + b ** 2 - c ** 2) / (2 * a * b))
+
+        (X, Y, Z) = coords
 
         R2 = X ** 2 + Y ** 2
         R = math.sqrt(R2)
