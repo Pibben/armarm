@@ -1,7 +1,7 @@
-#import input
+# import input
 import kinematics
-import math
 import numpy as np
+
 
 def main():
     np.set_printoptions(precision=4)
@@ -9,7 +9,7 @@ def main():
 
     f = kinematics.ArticulatedArm()
 
-    inverse = f.calculate_inverse(10, 0 , 0)
+    inverse = f.calculate_inverse(10, 0, 0)
     print(np.degrees(np.array(inverse)))
 
     forward = f.calculate_forward(*inverse)
