@@ -9,7 +9,7 @@ def main():
     np.set_printoptions(precision=4)
     np.set_printoptions(suppress=True)
     print(forward)
-    inverse = f.calculate_inverse(forward[0], forward[1], forward[2])
+    inverse = f.calculate_inverse(*(forward[:3]))
     print(np.array(inverse))
 
 if __name__ == "__main__":

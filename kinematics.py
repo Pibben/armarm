@@ -50,7 +50,7 @@ class ArticulatedArm:
     def calculate_forward(self, theta1, theta2, theta3):
         m = self.L1.calculate(theta1) * self.L2.calculate(theta2) * self.L3.calculate(theta3)
 
-        return (m @ np.array([0, 0, 0, 1])).transpose()
+        return np.squeeze(np.asarray(m @ np.array([0, 0, 0, 1])))
 
     def calculate_inverse(self, X, Y, Z):
         def angle_from_sides(a, b, c):
