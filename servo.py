@@ -1,11 +1,12 @@
+import Adafruit_PCA9685
+
 class ServoController:
-    def __init__(self, address):
-        self.address = address
-        self.pwm = None
-        self.pwm.setPWMFreq(60)
+    def __init__(self):
+        self.pwm = Adafruit_PCA9685.PCA9685()
+        self.pwm.set_pwm_freq(60)
 
     def set(self, port, value):
-        self.pwm.setPWM(port, 0, value)
+        self.pwm.set_pwm(port, 0, value)
 
 class Calibration:
     def __init__(self, neg90, zero, pos90):
@@ -21,11 +22,21 @@ class Calibration:
         return k * degrees + self.zero
 
 class Servo:
-    def __init__(self, calibration, controller, port):
+    def __init__(self, calibration, controller, port, min, max):
         self.calibration = calibration
         self.controller = controller
         self.port = port
+        self.min = min
+        self.max = max
 
     def setDegree(self, degrees):
         value = self.calibration.degreesToValue(degrees)
+        self.setRaw(value)
+
+    def setRaw(self, value):
+        if value > self.max:
+            value = self.max
+        if value < self.min:
+            value = self.min
+
         self.controller.set(self.port, value)
