@@ -13,3 +13,4 @@ Robotic arm controlled by Raspberry Pi Zero
 * http://www.dct.tue.nl/New/Lambrechts/Advanced_Setpoints.pdf (Trajectory Planning, Setpoint Generation
 and Feedforward for Motion Systems)
 * http://www.ene.ttu.ee/elektriajamid/oppeinfo/materjal/AAR0040/03_Robotics.pdf ("PATH AND TRAJECTORY PLANNING")
+* http://www.et.byu.edu/~ered/ME537/Notes/Ch5.pdf ("CONSTANT JERK EQUATIONS FOR A TRAJECTORY GENERATOR")
