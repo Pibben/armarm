@@ -16,3 +16,14 @@ and Feedforward for Motion Systems)
 ### Smart Servo
 * http://forums.parallax.com/discussion/138736/magnetic-encoder-project-as5055/p1
 * https://github.com/Biomimetix
+* https://github.com/ginge/OpenServo/
+* https://www.cubic.org/docs/hermite.htm
+* https://hackaday.io/project/17079-mocoder-magnetic-encoder
+* https://www.melexis.com/en/product/MLX90316/Absolute-Rotary-Position-Sensor-IC
+* https://hackaday.io/project/9433-brushed-dc-servo-drive
+* AMS5040/45/55
+* https://hackaday.io/project/249-moti-a-smart-servo
+* https://github.com/misan/dcservo/
+* https://pp.bme.hu/tr/article/download/7105/6203/ (Mini Actuators for Safety Critical Unmanned Aerial Vehicles Avionics)
+* https://matheo.uliege.be/bitstream/2268.2/1641/5/Erratum_Thesis.pdf
+** https://github.com/GuillaumeLempereur/GL-28R_servomotor
