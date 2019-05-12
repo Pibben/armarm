@@ -28,3 +28,4 @@ and Feedforward for Motion Systems)
 * https://matheo.uliege.be/bitstream/2268.2/1641/5/Erratum_Thesis.pdf
   * https://github.com/GuillaumeLempereur/GL-28R_servomotor
 * https://www.nxp.com/docs/en/data-sheet/MC33887.pdf (monolithic H-bridge power IC)
+* https://github.com/madcowswe/ODrive/
