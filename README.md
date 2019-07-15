@@ -13,6 +13,7 @@ and Feedforward for Motion Systems)
 * http://www.et.byu.edu/~ered/ME537/Notes/Ch5.pdf ("CONSTANT JERK EQUATIONS FOR A TRAJECTORY GENERATOR")
 * https://www.researchgate.net/profile/I-Ming_Chen/publication/4303038_Planning_Algorithms_for_S-curve_Trajectories/links/09e41506d967e6cab5000000/Planning-Algorithms-for-S-curve-Trajectories.pdf
 * http://library.nrao.edu/public/memos/gbt/GBT_203.pdf (Jerk-Minimizing Trajectory Generator in C)
+* https://web.archive.org/web/20151205193059/http://www.et.byu.edu/~ered/ME537/PowerPoint/powerpoint.html
 
 ### Smart Servo
 * http://forums.parallax.com/discussion/138736/magnetic-encoder-project-as5055/p1
